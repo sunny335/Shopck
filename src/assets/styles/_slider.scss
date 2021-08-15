@@ -9,7 +9,11 @@
     border-radius: 50%;
     width: 32px;
     height: 32px;
-
+    &:focus,&.active {
+      background: none rgb(255, 255, 255);
+      box-shadow: rgba(72, 98, 112, 25%) 0px 4px 8px 0px !important;
+      color: rgb(15, 29, 14);
+    }
     &::before {
       color: #010101 !important;
       content: '>';
@@ -19,7 +23,7 @@
       font-family: monospace;
     }
   }
-  .slick-next{
+  .slick-next {
     right: -40px;
   }
   .slick-prev {
@@ -59,9 +63,9 @@
       text-transform: none;
       text-decoration: none;
     }
-    &:hover{
-          border-color: rgb(226, 232, 235);
-          box-shadow: 0;
+    &:hover {
+      border-color: rgb(226, 232, 235);
+      box-shadow: 0;
     }
   }
 }

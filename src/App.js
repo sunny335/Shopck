@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import '../src/assets/styles/style.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/assets/styles/style.scss';
 // import Fallback from 'src/components/Fallback';
 // import NotFound from 'src/components/404';
 // import withTitle from 'src/components/TitleComponent';
