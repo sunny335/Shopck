@@ -1,0 +1,39 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-left: 16px;
+  // height: 40px;
+  .input-group {
+    transition: all 0.3s ease;
+    // border-radius: 25px;
+    border-color: rgb(207, 215, 219) !important;
+    min-width: 500px;
+    border-radius: 4px;
+    .form-control {
+      border-color: transparent;
+      transition: all 0.3s ease;
+      &:not(:last-child) {
+        // border-radius: 25px;
+      }
+    }
+    input {
+      padding: 8px;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: rgb(15, 29, 14);
+      letter-spacing: normal;
+      word-spacing: normal;
+        border: 0;
+      &:focus {
+        box-shadow: 0;
+      }
+    }
+    svg{
+      height: 18px;
+      width: 18px;
+    }
+
+
+  }
+}

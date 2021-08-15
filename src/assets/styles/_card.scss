@@ -1,0 +1,56 @@
+.card-section {
+  margin-top: 30px !important;
+  .product-card {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    .card-img {
+      height: 221px;
+      overflow: hidden;
+    }
+    h5,h6 {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      max-height: calc(44px);
+      font-size: 16px;
+      line-height: 22px;
+    }
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 10px;
+    }
+  }
+  .loadmore-btn {
+    font-family: inherit;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 38px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    align-items: center;
+    margin: 0px;
+    border-image: initial;
+    background: none rgb(60, 206, 105);
+    transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+      border-color, box-shadow, color;
+    padding: 8px 16px;
+    border-color: rgb(60, 206, 105);
+    border-radius: 2em;
+      margin-bottom:40px !important;
+  }
+}
