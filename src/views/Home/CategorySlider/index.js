@@ -17,7 +17,7 @@ const index = () => {
     <Row className='category-slider'>
       <Col md={10}>
         <Slider {...settings}>
-          <Link to='#' className='category-items'>
+          <Link to='/search' className='category-items'>
             <div>
               <svg viewBox='0 0 32 32' class='SVG-wlnxuy-0 bIwcGB'>
                 <defs>

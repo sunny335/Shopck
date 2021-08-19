@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import { Container, Col, Row, Nav, NavItem, Button, NavLink } from 'reactstrap';
+import { Container, Col, Row, Nav, NavItem, Button } from 'reactstrap';
 import Authentication from '../AuthenticationForm';
-// import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import ModalRight from '../ModalRight';
 
 import Search from '../Search';
@@ -23,11 +23,13 @@ const Header = () => {
         <Row className='align-items-center'>
           <Col className='d-flex align-items-center justify-content-between'>
             <div className=' d-flex align-items-center'>
-              <img
-                src='https://web3cdn.secondhandapp.com/_next/static/logotype.f00f7050feb3d511bf44ea45366d7488.svg'
-                alt='logo'
-                height='38px'
-              />
+              <Link to='/'>
+                <img
+                  src='https://web3cdn.secondhandapp.com/_next/static/logotype.f00f7050feb3d511bf44ea45366d7488.svg'
+                  alt='logo'
+                  height='38px'
+                />
+              </Link>
               {/* <p className='text-muted fw-bold ms-3'>SHPOCK</p> */}
               <Search />
             </div>
@@ -37,7 +39,7 @@ const Header = () => {
                   <NavLink
                     exact
                     className='nav-style  nav-link text-muted'
-                    to='/shop'
+                    to='/sells'
                   >
                     <svg
                       viewBox='0 0 24 24'
@@ -48,6 +50,23 @@ const Header = () => {
                       </g>
                     </svg>
                     Sell Now
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    exact
+                    className='nav-style  nav-link text-muted'
+                    to='/Profile/watchlist'
+                  >
+                    <svg viewBox='0 0 24 24' class='SVG-wlnxuy-0 bIwcGB'>
+                      <path
+                        d='M2.471 12.356h.001l9.14 9.718a.497.497 0 0 0 .755.006l9.162-9.701.005-.006c2.268-2.407 2.29-6.356.05-8.794-2.217-2.41-5.809-2.437-8.055-.058l-1.56 1.652-1.583-1.675c-2.224-2.355-5.781-2.327-7.974.063l-.014.016C.172 6.02.205 9.957 2.47 12.356z'
+                        stroke='currentColor'
+                        stroke-width='1.5'
+                        fill='none'
+                        fill-rule='evenodd'
+                      ></path>
+                    </svg>
                   </NavLink>
                 </NavItem>
               </Nav>

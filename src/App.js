@@ -12,8 +12,11 @@ import '../src/assets/styles/style.scss';
 // const Home = lazy(() => import('../Home'));
 
 import Home from './views/Home';
-import Header from '../src/component/Header'
-import Footer from  '../src/component/Footer'
+import Header from '../src/component/Header';
+import Footer from '../src/component/Footer';
+import Sells from './views/Sells';
+import SearchPage from './views/SearchPage';
+import Profile from './views/Profile';
 const App = () => {
   return (
     <>
@@ -22,10 +25,11 @@ const App = () => {
         <Switch>
           {/* Page routes */}
           <Route exact path='/' component={Home} />
-
-          {/* Doc Page */}
+          <Route exact path='/sells' component={Sells} />
+          <Route exact path='/search' component={SearchPage} />
+          <Route  path='/profile' component={Profile} />
         </Switch>
-         <Footer />
+        <Footer />
       </Router>
     </>
   );

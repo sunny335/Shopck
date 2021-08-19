@@ -14,19 +14,19 @@ const index = () => {
           <div className='categories'>
             <ul className='d-flex m-0 p-0 align-items-center'>
               <li>
-                <Link to='#'>Sofa</Link>
+                <Link to='/search'>Sofa</Link>
               </li>
               <li>
-                <Link to='#'>Nintendo</Link>
+                <Link to='/search'>Nintendo</Link>
               </li>
               <li>
-                <Link to='#'>I phoneX</Link>
+                <Link to='/search'>I phoneX</Link>
               </li>
               <li>
-                <Link to='#'>Chair</Link>
+                <Link to='/search'>Chair</Link>
               </li>
               <li>
-                <Link to='#'>Bike</Link>
+                <Link to='/search'>Bike</Link>
               </li>
             </ul>
           </div>

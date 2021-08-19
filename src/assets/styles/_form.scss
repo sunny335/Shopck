@@ -35,253 +35,9 @@
     }
   }
 }
-.authentication {
-  h5 {
-    margin-top: 0px;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    margin-bottom: 0px;
-    text-align: center;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 16px;
-    line-height: 22px;
-    text-size-adjust: 100%;
-    color: rgb(15, 29, 14);
-    span {
-      font-family: inherit;
-      text-transform: none;
-      vertical-align: baseline;
-      user-select: none;
-      cursor: pointer;
-      min-height: auto;
-      white-space: normal;
-      text-align: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      font-weight: bold;
-      color: rgb(15, 29, 14);
-      width: auto;
-      display: inline-flex;
-      -webkit-box-flex: 0;
-      flex-grow: 0;
-      -webkit-box-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      align-items: center;
 
-      margin: 0px;
-      margin-left: 3px;
-      overflow: visible;
-      text-decoration: none;
-      background: none transparent;
-      transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-color, box-shadow, color;
-      border-width: initial;
-      border-style: none;
-      border-image: initial;
-      border-color: transparent;
-      padding: 0px;
-      border-radius: 2em;
-    }
-  }
-  .signup {
-    width: 305px;
-    .line {
-      width: 100%;
-      display: block;
-      border-bottom: 1px solid rgb(222, 225, 222);
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
-    h1 {
-      margin-top: 0px;
-      overflow-wrap: break-word;
-      max-width: 100%;
-      font-weight: bold;
-      text-align: center;
-      font-size: 30px;
-      line-height: 42px;
-      margin-bottom: 16px;
-    }
-  }
-  .button-groups {
-    button {
-      display: block;
-      width: 100%;
-      font-family: inherit;
-      text-align: center;
-      font-size: 14px;
-      line-height: 20px;
-      min-height: 28px;
-      width: 100%;
-      display: flex;
-      flex-grow: 1;
-      justify-content: center;
-      align-items: center;
-      appearance: none;
-      font-weight: normal;
-      color: rgb(15, 29, 14);
-      margin: 0px;
-      text-decoration: none;
-      background: none rgb(255, 255, 255);
-      transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-color, box-shadow, color;
-      padding: 9px 24px;
-      border-radius: 2em;
-      border-width: 1px;
-      border-style: solid;
-      border-color: rgb(146, 161, 169);
-      margin-bottom: 8px;
-      svg {
-        height: 20px;
-        width: 20px;
-        margin-right: 8px;
-      }
-    }
-    .btnapple {
-      color: rgb(255, 255, 255);
-      background-color: rgb(15, 29, 14);
-    }
-    .btnfb {
-      color: rgb(255, 255, 255);
-      border-color: rgb(15, 29, 14);
-      background: none rgb(66, 103, 178);
-      &:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(50, 77, 143);
-      }
-    }
-    .btnemail {
-      color: rgb(15, 29, 14);
-      background: none rgb(234, 236, 234);
-      border-color: rgb(234, 236, 234);
-      &:hover {
-        border-color: rgb(234, 236, 234);
-        background-color: rgb(234, 236, 234);
-        color: rgb(93, 104, 93);
-      }
-    }
-  }
-  .login {
-    h3 {
-      display: inline-block;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 32px;
-      color: rgb(15, 29, 14);
-      margin-bottom: 20px;
-    }
-    form {
-      width: 305px;
-      padding-right: 20px;
-      border-right: 1px solid rgb(222, 225, 222);
-      .form-control {
-        margin-bottom: 16px;
-      }
-      button {
-        padding: 9px 24px;
-        border-radius: 2em;
-        width: 100%;
-        margin-top: 20px;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 20px;
-        min-height: 28px;
-      }
-      button:disabled {
-        border-color: rgb(234, 236, 234);
-        background-color: rgb(234, 236, 234);
-        color: rgb(255, 255, 255);
-        cursor: not-allowed;
-        box-shadow: none;
-      }
-    }
-    .button-groups {
-      padding-left: 20px;
-      width: 305px;
-      h5 {
-      }
-    }
-    .forgot-password {
-      color: rgb(15, 29, 14);
-      font-size: inherit;
-      line-height: inherit;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 30px;
-      margin-bottom: 0;
-      &:hover {
-        color: rgb(93, 104, 93);
-      }
-    }
-  }
-  .forgot-password {
-    max-width: 316px;
-    h4 {
-      margin-top: 0px;
-      overflow-wrap: break-word;
-      max-width: 100%;
-      font-weight: bold;
-      text-align: center;
-      font-size: 22px;
-      line-height: 32px;
-      margin-bottom: 16px;
-      color: rgb(15, 29, 14);
-    }
-    p {
-      margin-top: 0px;
-      max-width: 100%;
-      overflow-wrap: break-word;
-      margin-bottom: 16px;
-      color: rgb(15, 29, 14);
-    }
-    input {
-      margin-bottom: 16px;
-    }
-    > div {
-      text-align: center;
-    }
-    h6 {
-      color: rgb(15, 29, 14);
-      font-size: inherit;
-      line-height: inherit;
-      font-weight: bold;
-      cursor: pointer;
-
-      display: inline-block;
-      margin: 0 auto;
-      margin-top: 20px;
-      &:hover {
-        color: rgb(93, 104, 93);
-      }
-    }
-    form {
-      button {
-        background: none rgb(15, 29, 14);
-        color: rgb(255, 255, 255);
-        border-color: rgb(15, 29, 14);
-        padding: 9px 24px;
-        border-radius: 2em;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 20px;
-        min-height: 28px;
-        width: 100%;
-        &:hover,
-        &:focus {
-          border-color: rgb(93, 104, 93);
-          background-color: rgb(93, 104, 93);
-          color: rgb(255, 255, 255);
-        }
-      }
-    }
-  }
-}
-input {
+input,
+textarea {
   font-family: inherit;
   font-size: inherit !important;
   line-height: inherit;
@@ -302,5 +58,121 @@ input {
   &:focus {
     box-shadow: unset !important;
     border-color: rgb(72, 98, 112) !important;
+  }
+}
+
+.sells {
+  h5 {
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  form {
+    label {
+      color: rgb(15, 29, 14);
+      font-size: 16px;
+      line-height: 22px;
+      text-size-adjust: 100%;
+      margin-bottom: 3px;
+    }
+    .divider {
+      padding: 32px;
+      display: block;
+      box-sizing: border-box;
+      background-color: rgb(255, 255, 255);
+      border-radius: 12px;
+      border: 1px solid rgb(226, 232, 235);
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 10px !important;
+    }
+    .imageinputarea {
+    }
+    .ImageDropzone {
+      position: relative;
+      .DropzoneArea {
+        height: 104px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: rgb(249, 250, 251);
+        color: rgb(15, 29, 14);
+        border-width: 2px;
+        border-style: dashed;
+        border-image: initial;
+        border-radius: 12px;
+        border-color: rgb(15, 29, 14);
+        transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+            0s,
+          border-color, box-shadow, color;
+        .IconContainer {
+          display: inline-block;
+          line-height: 0;
+          vertical-align: middle;
+          color: rgb(15, 29, 14);
+          .IconViewport {
+            display: inline-block;
+            line-height: 1;
+            width: 1em;
+            height: 1em;
+            color: inherit;
+            font-size: 48px;
+            svg {
+              width: 1em;
+              height: 1em;
+              display: inline-block;
+              font-size: inherit;
+            }
+          }
+        }
+      }
+      .StyledInput {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+  .smalltext {
+    margin-top: 0px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 0px;
+    color: rgb(93, 104, 93);
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sell-btn {
+    font-family: inherit;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 38px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    align-items: center;
+    margin: 0px;
+    border-image: initial;
+    background: none rgb(60, 206, 105);
+    transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+      border-color, box-shadow, color;
+    padding: 8px 16px;
+    border-color: rgb(60, 206, 105);
+    border-radius: 2em;
+    margin-left: auto;
+    display: block;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
   }
 }

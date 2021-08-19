@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Col, Row } from 'reactstrap';
 // import logo from '../../assets/img/main.png'
 // import { a } from 'react-router-dom';
@@ -72,15 +73,15 @@ const Footer = () => {
               <Col key={items.id} xl={3} lg={3} md={6} sm={6}>
                 <ul className='list-unstyled'>
                   <li className='text-uppercase mb-3 title'>
-                    <a className='h6'>{items.title}</a>
+                    <Link className='h6'>{items.title}</Link>
                   </li>
                   {items.navitem &&
                     items.navitem.map((item) => (
                       <li className='my-2 text-capitalize item' key={item.id}>
                         {item.path ? (
-                          <a to={item.path} className='align-items-center'>
+                          <Link to={item.path} className='align-items-center'>
                             {item.name}
-                          </a>
+                          </Link>
                         ) : (
                           <p>{item.name}</p>
                         )}
