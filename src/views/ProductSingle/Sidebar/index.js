@@ -1,119 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState }  from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import ModalRight from '../../../component/ModalRight';
-const Sidebar = () => {
-  const [modal1, setModal1] = useState(false);
-  const [modal2, setModal2] = useState(false);
-  const [modal3, setModal3] = useState(false);
-  const [links, setLinks] = useState(false);
-  return (
-    <div className='sidebar text-center me-3'>
-      <div className='profile-image'>
-        <img
-          src='https://yams.secondhandapp.at/api/v1/shpock-production/images/default_avatar_m_1/?rule=aw100ah100q75jpeg'
-          alt=''
-        />
-      </div>
-      <div className='reviews'>
-        <Link to='Profile/reviews'>
-          <span>(0)</span>
-        </Link>
-      </div>
-      <h3>Ahmed S.</h3>
-      <div className='information'>
-        <ul>
-          <li>
-            <h6>0</h6>
-            <p>Bought</p>
-          </li>
-          <li>
-            <h6>0</h6>
-            <p>Sold</p>
-          </li>
-          <li onClick={() => setModal1(!modal1)} className='followers'>
-            <h6>0</h6>
-            <p>Followers</p>
-            <ModalRight modal={modal1} setModal={setModal1}>
-              <h1>Followers</h1>
-              <div className='followers-modal'>
-                <div className='modal-contents'>
-                  <div className='items'>
-                    <div>
-                      <img
-                        src='https://yams.secondhandapp.at/api/v1/shpock-production/images/5fc511656825a00d2c9940f1/?rule=aw100ah100q75jpeg'
-                        alt=''
-                      />
-                    </div>
-                    <h3>
-                      <Link>Child.org Charity Shop</Link>{' '}
-                    </h3>
-                    <Button>Followers</Button>
-                  </div>
-                </div>
-              </div>
-            </ModalRight>
-          </li>
-          <li onClick={() => setModal2(!modal2)} className='following'>
-            <h6>0</h6>
-            <p>Following</p>
-            <ModalRight modal={modal2} setModal={setModal2}>
-              <h1>Following</h1>
-              <div className='following-modal'>
-                <div className='modal-contents'>
-                  <div className='items'>
-                    <div>
-                      <img
-                        src='https://yams.secondhandapp.at/api/v1/shpock-production/images/5fc511656825a00d2c9940f1/?rule=aw100ah100q75jpeg'
-                        alt=''
-                      />
-                    </div>
-                    <h3>
-                      <Link>Child.org Charity Shop</Link>{' '}
-                    </h3>
-                    <Button>Following</Button>
-                  </div>
-                </div>
-              </div>
-            </ModalRight>
-          </li>
-        </ul>
-      </div>
-      <div className='share-edit'>
-        <div className='social-links'>
-          <Button className='share' onClick={() => setLinks(!links)}>
-            Share
-          </Button>
-        </div>
-        <div>
-          <Button className='edit' onClick={() => setModal3(!modal3)}>
-            Edit Profile
-          </Button>
-          <ModalRight modal={modal3} setModal={setModal3}>
-            <h1>Edit Profile</h1>
-            <div className='edit-profile-modal'>
-              <Form>
-                <FormGroup className='user-form'>
-                  <Label for='exampleEmail'>Username</Label>
-                  <Input type='name' name='name' placeholder='add a Username' />
-                </FormGroup>
-                <FormGroup>
-                  <Label for='exampleText'>Bio</Label>
-                  <Input
-                    type='textarea'
-                    name='text'
-                    id='exampleText'
-                    placeholder='add a description about your area'
-                  />
-                </FormGroup>
+import { Button } from 'reactstrap';
 
-                <Button>Save</Button>
-              </Form>
-            </div>
-          </ModalRight>
-        </div>
+const Sidebar = () => {
+    const [links, setLinks] = useState(false);
+  return (
+    <div className='product-single-sidebar'>
+      <h1>Radio CB PNI 8000+antenna Mag pni 160</h1>
+      <p>£70.00</p>
+      <div className='locations'>
+        <svg
+          viewBox='0 0 24 24'
+          class='SVG__IconSVG-sc-741qml-0 jmSzln'
+          height='16'
+          width='16'
+        >
+          <path
+            fill='currentColor'
+            d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'
+          ></path>
+        </svg>
+        FK2 falkirk
       </div>
-      <ul className={`links-item ${links && 'open-links'}`} >
+      <Button className='make-offer'>Make Offer</Button>
+      <div className='share-wishlist'>
+        <Button className='share' onClick={() => setLinks(!links)}>
+          {' '}
+          <svg viewBox='0 0 16 16' class='SVG__IconSVG-sc-741qml-0 jmSzln'>
+            <path
+              d='M11.043 2.116a.65.65 0 1 1 .92-.92l4.032 4.033-4.033 4.033a.65.65 0 1 1-.919-.92l2.576-2.575c-5.053-.519-7.85 1.474-8.634 6.082a.65.65 0 0 1-.75.532c-.354-.06-.42-.396-.36-.75.884-5.195 4.01-7.625 9.492-7.192l-2.324-2.323zm2.66 9.24a.65.65 0 1 1 1.3 0v1.948a2.671 2.671 0 0 1-2.67 2.67H2.69a2.671 2.671 0 0 1-2.671-2.67V3.68a2.671 2.671 0 0 1 2.67-2.671h4.841a.65.65 0 0 1 0 1.3h-4.84c-.757 0-1.371.613-1.371 1.37v9.625c0 .757.614 1.37 1.37 1.37h9.642c.758 0 1.372-.613 1.372-1.37v-1.948z'
+              fill='#486270'
+              fill-rule='nonzero'
+            ></path>
+          </svg>
+          Share
+        </Button>
+        <Button>
+          <svg viewBox='0 0 24 24' class='SVG-wlnxuy-0 bIwcGB'>
+            <path
+              d='M2.471 12.356h.001l9.14 9.718a.497.497 0 0 0 .755.006l9.162-9.701.005-.006c2.268-2.407 2.29-6.356.05-8.794-2.217-2.41-5.809-2.437-8.055-.058l-1.56 1.652-1.583-1.675c-2.224-2.355-5.781-2.327-7.974.063l-.014.016C.172 6.02.205 9.957 2.47 12.356z'
+              stroke='currentColor'
+              stroke-width='1.5'
+              fill='none'
+              fill-rule='evenodd'
+            ></path>
+          </svg>
+          Add to watchlist
+        </Button>
+      </div>
+        <ul className={`links-item ${links && 'open-links'}`} >
         <li>
           <svg viewBox='0 0 32 32' class='SVG-wlnxuy-0 bIwcGB'>
             <path
@@ -171,7 +106,19 @@ const Sidebar = () => {
           </Button>
         </li>
       </ul>
-      <p className='joined'>Joined August 2021</p>
+      <Link to='/users' className='prfile-info text-dark'>
+        <img
+          src='https://yams.secondhandapp.at/api/v1/shpock-production/images/6111b36acd979358fd871e86/?rule=aw100ah100q75jpeg'
+          alt=''
+        />
+        <div className='details'>
+          <h6>GGDelectronics and Communications LTD</h6>
+          <p>(0)</p>
+          <p>
+            <span>0 Purces</span>. <span>Since 2021</span>
+          </p>
+        </div>
+      </Link>
     </div>
   );
 };

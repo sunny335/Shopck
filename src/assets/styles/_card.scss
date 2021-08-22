@@ -184,3 +184,47 @@
     }
   }
 }
+.shop-card {
+  display: block;
+  position: relative;
+  background: 50% 50% / cover rgb(255, 255, 255);
+  border-radius: 12px;
+  width: 100%;
+
+  overflow: hidden;
+  > img {
+    max-height: 286px;
+  }
+  .profile-image {
+    margin-right: 16px;
+    img {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+    }
+  }
+  h5 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: calc(44px);
+    font-size: 16px;
+    line-height: 22px;
+  }
+  p {
+    white-space: normal;
+    text-align: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(15, 29, 14);
+    font-family: inherit;
+    font-weight: normal;
+  }
+}

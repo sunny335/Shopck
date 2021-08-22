@@ -8,7 +8,7 @@ const index = () => {
       <Col>
         <h5>Specials</h5>
         <div className='card-item'>
-          <Link to='/search' className='card-data'>
+          <Link to='/shops' className='card-data'>
             <div className='icon'>
               <svg viewBox='0 0 40 40' class='SVG__IconSVG-sc-741qml-0 jmSzln'>
                 <defs>

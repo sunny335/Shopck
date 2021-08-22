@@ -1,4 +1,6 @@
 .profile {
+  background: rgb(247, 248, 247);
+  height: 100vh;
   .profile-nav {
     border-bottom: 1px solid rgb(222, 225, 222);
     li {
@@ -48,6 +50,8 @@
     padding: 20px;
     border: 1px solid rgb(222, 225, 222);
     border-radius: 12px;
+    background-color: #fff;
+    margin-top: 60px;
     .profile-image {
       img {
         height: 48px;
@@ -191,5 +195,71 @@
       border-radius: 2em;
       margin-left: 40px;
     }
+  }
+  .joined {
+    display: inline-block;
+    color: rgb(93, 104, 93);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+  .social-links {
+  }
+
+  .links-item {
+    display: none;
+    margin-top: 20px;
+    // position: absolute;
+    li {
+      list-style: none;
+      margin-right: 10px;
+      > svg {
+        height: 32px;
+        width: 32px;
+      }
+      button {
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+        font-family: inherit;
+        font-weight: normal;
+        text-transform: none;
+        text-align: center;
+        vertical-align: baseline;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+        color: rgb(226, 232, 235);
+        font-size: 14px;
+        line-height: 20px;
+        min-height: 28px;
+        width: auto;
+        display: inline-flex;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        appearance: button;
+        margin: 0px;
+        overflow: visible;
+        text-decoration: none;
+        transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+            0s,
+          border-color, box-shadow, color;
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(226, 232, 235);
+        border-image: initial;
+        border-radius: 2em;
+        padding: 4px 8px;
+      }
+    }
+  }
+  .open-links{
+    display: flex;
   }
 }

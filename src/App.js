@@ -17,6 +17,9 @@ import Footer from '../src/component/Footer';
 import Sells from './views/Sells';
 import SearchPage from './views/SearchPage';
 import Profile from './views/Profile';
+import Shops from './views/Shops';
+import Users from './views/Users';
+import ProductSinge  from './views/ProductSingle';
 const App = () => {
   return (
     <>
@@ -27,7 +30,10 @@ const App = () => {
           <Route exact path='/' component={Home} />
           <Route exact path='/sells' component={Sells} />
           <Route exact path='/search' component={SearchPage} />
-          <Route  path='/profile' component={Profile} />
+          <Route path='/profile' component={Profile} />
+          <Route path='/users' component={Users} />
+          <Route exact path='/shops' component={Shops} />
+           <Route exact path='/product-single' component={ProductSinge} />
         </Switch>
         <Footer />
       </Router>

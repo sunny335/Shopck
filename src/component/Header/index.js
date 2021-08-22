@@ -38,7 +38,7 @@ const Header = () => {
                 <NavItem>
                   <NavLink
                     exact
-                    className='nav-style  nav-link text-muted'
+                    className='nav-style  nav-link text-muted sell-now-link '
                     to='/sells'
                   >
                     <svg
@@ -55,13 +55,13 @@ const Header = () => {
                 <NavItem>
                   <NavLink
                     exact
-                    className='nav-style  nav-link text-muted'
+                    className='nav-style  nav-link text-muted wishlist-link'
                     to='/Profile/watchlist'
                   >
                     <svg viewBox='0 0 24 24' class='SVG-wlnxuy-0 bIwcGB'>
                       <path
                         d='M2.471 12.356h.001l9.14 9.718a.497.497 0 0 0 .755.006l9.162-9.701.005-.006c2.268-2.407 2.29-6.356.05-8.794-2.217-2.41-5.809-2.437-8.055-.058l-1.56 1.652-1.583-1.675c-2.224-2.355-5.781-2.327-7.974.063l-.014.016C.172 6.02.205 9.957 2.47 12.356z'
-                        stroke='currentColor'
+                        stroke='#000'
                         stroke-width='1.5'
                         fill='none'
                         fill-rule='evenodd'

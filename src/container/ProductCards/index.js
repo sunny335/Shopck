@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Col, Row, Button } from 'reactstrap';
 import ProductCard from '../../component/ProductCard';
 
@@ -57,7 +58,9 @@ const ProductCards = () => {
       {data &&
         data.map((item, i) => (
           <Col md={3}>
-            <ProductCard {...item} />
+            <Link to='/product-single' className='text-dark'>
+              <ProductCard {...item} />
+            </Link>
           </Col>
         ))}
       <Col md={12} className='text-center'>

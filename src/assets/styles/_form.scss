@@ -176,3 +176,46 @@ textarea {
     margin-bottom: 40px !important;
   }
 }
+.edit-profile-modal {
+  .user-form {
+    margin-bottom: 20px;
+  }
+  button {
+    font-family: inherit;
+    text-transform: none;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 28px;
+    width: auto;
+    display: block;
+    appearance: button;
+    margin: 0px;
+    overflow: visible;
+    text-decoration: none;
+    border-width: initial;
+    border-style: none;
+    border-image: initial;
+    background: none rgb(15, 29, 14);
+    transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+      border-color, box-shadow, color;
+    border-color: rgb(15, 29, 14);
+    padding: 9px 24px;
+    border-radius: 2em;
+    margin-top: 30px;
+    margin-left: auto;
+    &:disabled {
+      cursor: not-allowed;
+      box-shadow: none;
+      border-color: rgb(234, 236, 234);
+      background-color: rgb(234, 236, 234);
+      color: rgb(255, 255, 255);
+    }
+  }
+}

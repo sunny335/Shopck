@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import ModalRight from '../../../component/ModalRight';
 const Sidebar = () => {
-  const [modal1, setModal1] = useState(false);
-  const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
   const [links, setLinks] = useState(false);
   return (
@@ -20,100 +18,21 @@ const Sidebar = () => {
           <span>(0)</span>
         </Link>
       </div>
-      <h3>Ahmed S.</h3>
-      <div className='information'>
-        <ul>
-          <li>
-            <h6>0</h6>
-            <p>Bought</p>
-          </li>
-          <li>
-            <h6>0</h6>
-            <p>Sold</p>
-          </li>
-          <li onClick={() => setModal1(!modal1)} className='followers'>
-            <h6>0</h6>
-            <p>Followers</p>
-            <ModalRight modal={modal1} setModal={setModal1}>
-              <h1>Followers</h1>
-              <div className='followers-modal'>
-                <div className='modal-contents'>
-                  <div className='items'>
-                    <div>
-                      <img
-                        src='https://yams.secondhandapp.at/api/v1/shpock-production/images/5fc511656825a00d2c9940f1/?rule=aw100ah100q75jpeg'
-                        alt=''
-                      />
-                    </div>
-                    <h3>
-                      <Link>Child.org Charity Shop</Link>{' '}
-                    </h3>
-                    <Button>Followers</Button>
-                  </div>
-                </div>
-              </div>
-            </ModalRight>
-          </li>
-          <li onClick={() => setModal2(!modal2)} className='following'>
-            <h6>0</h6>
-            <p>Following</p>
-            <ModalRight modal={modal2} setModal={setModal2}>
-              <h1>Following</h1>
-              <div className='following-modal'>
-                <div className='modal-contents'>
-                  <div className='items'>
-                    <div>
-                      <img
-                        src='https://yams.secondhandapp.at/api/v1/shpock-production/images/5fc511656825a00d2c9940f1/?rule=aw100ah100q75jpeg'
-                        alt=''
-                      />
-                    </div>
-                    <h3>
-                      <Link>Child.org Charity Shop</Link>{' '}
-                    </h3>
-                    <Button>Following</Button>
-                  </div>
-                </div>
-              </div>
-            </ModalRight>
-          </li>
-        </ul>
-      </div>
+      <h3>GGDelectronics and Communications LTD</h3>
+
       <div className='share-edit'>
+        <div>
+          <Button className='edit' onClick={() => setModal3(!modal3)}>
+            following
+          </Button>
+        </div>
         <div className='social-links'>
           <Button className='share' onClick={() => setLinks(!links)}>
             Share
           </Button>
         </div>
-        <div>
-          <Button className='edit' onClick={() => setModal3(!modal3)}>
-            Edit Profile
-          </Button>
-          <ModalRight modal={modal3} setModal={setModal3}>
-            <h1>Edit Profile</h1>
-            <div className='edit-profile-modal'>
-              <Form>
-                <FormGroup className='user-form'>
-                  <Label for='exampleEmail'>Username</Label>
-                  <Input type='name' name='name' placeholder='add a Username' />
-                </FormGroup>
-                <FormGroup>
-                  <Label for='exampleText'>Bio</Label>
-                  <Input
-                    type='textarea'
-                    name='text'
-                    id='exampleText'
-                    placeholder='add a description about your area'
-                  />
-                </FormGroup>
-
-                <Button>Save</Button>
-              </Form>
-            </div>
-          </ModalRight>
-        </div>
       </div>
-      <ul className={`links-item ${links && 'open-links'}`} >
+      <ul className={`links-item ${links && 'open-links'}`}>
         <li>
           <svg viewBox='0 0 32 32' class='SVG-wlnxuy-0 bIwcGB'>
             <path
@@ -172,6 +91,48 @@ const Sidebar = () => {
         </li>
       </ul>
       <p className='joined'>Joined August 2021</p>
+      <div className='informations'>
+        <h6>CB RADIO,CB ANTENNAS,HAM ANTENNAS,ACCESSORIES,</h6>
+        <ul>
+          <li>
+            <svg viewBox='0 0 24 24' class='SVG__IconSVG-sc-741qml-0 jmSzln'>
+              <path
+                fill='currentColor'
+                d='M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z'
+              ></path>
+            </svg>
+            giovanniiaconisi57@gmail.com
+          </li>
+          <li>
+            <svg viewBox='0 0 24 24' class='SVG__IconSVG-sc-741qml-0 jmSzln'>
+              <path
+                fill='currentColor'
+                d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'
+              ></path>
+            </svg>
+            +4487445676
+          </li>
+          <li>
+            <svg viewBox='0 0 24 24' class='SVG__IconSVG-sc-741qml-0 jmSzln'>
+              <path
+                fill='currentColor'
+                d='M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z'
+              ></path>
+            </svg>
+            Shop website
+          </li>
+          <li>
+            <svg viewBox='0 0 24 24' class='SVG__IconSVG-sc-741qml-0 jmSzln'>
+              <path
+                fill='currentColor'
+                d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'
+              ></path>
+            </svg>
+            Address, Falkirk, FK2 7XE, falkirk, GB
+          </li>
+        </ul>
+      </div>
+      <div className='terms'>This shop’s Terms & Conditions</div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ header {
     }
   }
   .sell-now {
-    a {
+    .sell-now-link{
       font-family: inherit;
       text-transform: none;
       text-align: center;
@@ -38,6 +38,14 @@ header {
         background-color: rgb(15, 29, 14);
         color: rgb(93, 104, 93) !important;
       }
+      svg {
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+      }
+    }
+    .wishlist-link {
+      background: #fff;
       svg {
         height: 24px;
         width: 24px;
