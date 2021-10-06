@@ -5,6 +5,9 @@
     border-radius: 12px;
     background-color: #fff;
     margin-top: 60px;
+    @media (max-width:767px) {
+      margin-top: 30px;
+    }
     .profile-image {
       img {
         height: 48px;
@@ -75,6 +78,9 @@
   }
   .profile-nav {
     border-bottom: 1px solid rgb(222, 225, 222);
+    @media (max-width:767px) {
+     padding-top: 20px;
+    }
     li {
       margin-right: 20px;
       a {

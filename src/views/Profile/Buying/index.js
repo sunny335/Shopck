@@ -2,7 +2,7 @@ import React from 'react';
 
 const data = [
   {
-    img: 'https://yams.secondhandapp.at/api/v1/shpock-production/images/5e325aa1957bcb6823b759c8/?rule=aw100ah100q75jpeg',
+    img: 'https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/04/2-2.jpg',
     title: 'RO water purifier',
     price: 'BDT 18,500.00',
   },

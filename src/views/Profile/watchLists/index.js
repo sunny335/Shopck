@@ -6,7 +6,7 @@ const data = [
   {
     id: 1,
     image:
-      'https://yams.secondhandapp.at/api/v1/shpock-production/images/61189121ac7d663f03026cde/?rule=aw237ah237q75jpeg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/65/Product_Photography.jpg',
     title: 'Heron six stage water purifire',
     price: 'BDT 16,500.00',
     description:
@@ -15,7 +15,7 @@ const data = [
   {
     id: 1,
     image:
-      'https://yams.secondhandapp.at/api/v1/shpock-production/images/61063936d484e514b61a71a6/?rule=aw237ah237q75jpeg',
+      'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Heron six stage water purifire',
     price: 'BDT 16,500.00',
     description:

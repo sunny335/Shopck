@@ -22,7 +22,7 @@ const Header = () => {
       <Container>
         <Row className='align-items-center'>
           <Col className='d-flex align-items-center justify-content-between'>
-            <div className=' d-flex align-items-center'>
+            <div className=' d-flex align-items-center logo'>
               <Link to='/'>
                 <img
                   src='https://web3cdn.secondhandapp.com/_next/static/logotype.f00f7050feb3d511bf44ea45366d7488.svg'
@@ -52,7 +52,7 @@ const Header = () => {
                     Sell Now
                   </NavLink>
                 </NavItem>
-                <NavItem>
+                <NavItem className='hearIcon'>
                   <NavLink
                     exact
                     className='nav-style  nav-link text-muted wishlist-link'
@@ -69,23 +69,37 @@ const Header = () => {
                     </svg>
                   </NavLink>
                 </NavItem>
+                <NavItem className='SearchIcon'>
+                  <NavLink
+                    exact
+                    className='nav-style  nav-link text-muted wishlist-link'
+                    to='/search'
+                  >
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0625 18.6875C14.826 18.6875 18.6875 14.826 18.6875 10.0625C18.6875 5.29904 14.826 1.4375 10.0625 1.4375C5.29904 1.4375 1.4375 5.29904 1.4375 10.0625C1.4375 14.826 5.29904 18.6875 10.0625 18.6875Z" stroke="#7587A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M16.5312 16.5312L21.5625 21.5625" stroke="#7587A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </NavLink>
+                </NavItem>
               </Nav>
               <ul className='button-groups d-flex align-items-center m-0 p-0'>
-                <li>
+
+                <li className='signup'>
                   <Button onClick={() => modals1()}>Sign Up</Button>
                   <ModalRight modal={modal} setModal={setModal}>
                     <Authentication login={login} />
                   </ModalRight>
                 </li>
-                <li>
+                <li className='login'>
                   <Button onClick={() => modals2()}>Log In</Button>
                   {/* <ModalRight modal={modal} setModal={setModal}>
                     <Authentication login={false} />
                   </ModalRight> */}
                 </li>
-                <li>
+                {/* <li>
                   <Button>...</Button>
-                </li>
+                </li> */}
               </ul>
             </div>
           </Col>

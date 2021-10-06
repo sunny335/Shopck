@@ -20,7 +20,7 @@ const index = () => {
                 <Link to='/search'>Nintendo</Link>
               </li>
               <li>
-                <Link to='/search'>I phoneX</Link>
+                <Link to='/search'>IphoneX</Link>
               </li>
               <li>
                 <Link to='/search'>Chair</Link>

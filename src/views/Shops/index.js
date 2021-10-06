@@ -89,7 +89,7 @@ const Shops = () => {
           </Col>
           {data &&
             data.map((items, i) => (
-              <Col md={3} className='mb-2'>
+              <Col md={4} lg={3} className='mb-2'>
                 <Link to='/users' className='text-dark'>
                   <ShopCard {...items} />
                 </Link>

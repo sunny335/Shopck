@@ -71,7 +71,7 @@ const Footer = () => {
           {data &&
             data.map((items) => (
               <Col key={items.id} xl={3} lg={3} md={6} sm={6}>
-                <ul className='list-unstyled'>
+                <ul className='list-unstyled lists'>
                   <li className='text-uppercase mb-3 title'>
                     <Link className='h6'>{items.title}</Link>
                   </li>

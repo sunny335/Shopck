@@ -108,7 +108,7 @@ const Sidebar = () => {
       </ul>
       <Link to='/users' className='prfile-info text-dark'>
         <img
-          src='https://yams.secondhandapp.at/api/v1/shpock-production/images/6111b36acd979358fd871e86/?rule=aw100ah100q75jpeg'
+          src='https://upload.wikimedia.org/wikipedia/commons/6/65/Product_Photography.jpg'
           alt=''
         />
         <div className='details'>

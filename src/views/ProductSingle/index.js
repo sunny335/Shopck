@@ -23,6 +23,13 @@ const ProductSignle = () => {
                 className='img-fluid'
               />
             </div>
+
+
+          </Col>
+          <Col md={6}>
+            <Sidebar />
+          </Col>
+          <Col md={6}>
             <div className='product-details'>
               <div>
                 <h6>Item Details</h6>
@@ -43,9 +50,6 @@ const ProductSignle = () => {
             </div>
             <InterestedItem />
             <QandAns />
-          </Col>
-          <Col md={6}>
-            <Sidebar />
           </Col>
         </Row>
       </Container>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Col,
   Container,
@@ -12,8 +12,11 @@ import {
   InputGroupText,
   Button,
 } from 'reactstrap';
+import ModalRight from '../../component/ModalRight';
+import Category from './Category';
 
 const Sells = () => {
+  const [modal, setModal] = useState(false);
   return (
     <section className='sells pt-4' style={{ background: '#F7F8F7' }}>
       <Container>
@@ -116,6 +119,16 @@ const Sells = () => {
                   </Col>
                 </Row>
               </div>
+              <div className='divider category-box m-0'>
+                <Label for="exampleSelect">Your product will be listed here</Label>
+                <div className='select d-flex align-items-center justify-content-between border p-2 w-50' onClick={()=> setModal(!modal)}>
+                  Choose a category
+                  <svg style={{height:'16px',width:'16px'}} viewBox="0 0 16 16" class="SVG__IconSVG-sc-741qml-0 kHWUOM"><path d="M4,4L12,4L8,8Z" fill="currentColor" stroke="currentColor" stroke-width="1px" strokeLinecap="butt"></path></svg>
+                </div>
+                 <ModalRight modal={modal} setModal={setModal}>
+                   <Category />
+                  </ModalRight>
+              </div>
               <div className='divider search-box m-0'>
                 <Label for='exampleEmail'>
                   Your product will be listed here
@@ -153,7 +166,7 @@ const Sells = () => {
                   Only the approximate location will be shown publicly.
                 </span>
               </div>
-               <Button className='sell-btn'>Sell now</Button>
+              <Button className='sell-btn'>Sell now</Button>
             </Form>
           </Col>
         </Row>

@@ -9456,6 +9456,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-custom-radio-checkbox@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-custom-radio-checkbox/-/react-custom-radio-checkbox-1.0.2.tgz#de00dcffa3a5ab5e5a80ce46f405d5e954e84b81"
+  integrity sha512-ZeLJOpYs6nn98IgQPmvxj5RAiHc5TAOg+yo/0HU/V37kQ/WHadLBpss33fB5q+5JImZOXAEiWlZ5Bob8kJ4Tvg==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
@@ -9514,6 +9519,11 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-multilevel-sidebar@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-multilevel-sidebar/-/react-multilevel-sidebar-1.0.4.tgz#cfd61d4c0867c7bd803ccd22db6a652a1faa27e8"
+  integrity sha512-1biVkb1/zp2Yv9dJODLIoDiVZ6WK9zLgJ4k+JZQ8Sb7xc4uwtcvk7npWBA1Gp5MV+kX4bsWcYgwjo55/CV+Y4w==
 
 react-popper@^1.3.6:
   version "1.3.11"

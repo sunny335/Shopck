@@ -1,10 +1,19 @@
 .profile {
   background: rgb(247, 248, 247);
+     @media (max-width:767px) {
+   background:#fff;
+          }
   height: 100vh;
   .profile-nav {
     border-bottom: 1px solid rgb(222, 225, 222);
+        @media (max-width:992px) {
+      margin-top: 10px;
+          }
     li {
       margin-right: 20px;
+       @media (max-width:767px) {
+   margin-right: 10px;
+          }
       a {
         font-family: inherit;
         font-size: inherit;
@@ -52,6 +61,12 @@
     border-radius: 12px;
     background-color: #fff;
     margin-top: 60px;
+       @media (max-width:992px) {
+      margin-top: 0px;
+          }
+            @media (max-width:767px) {
+  margin-right: 0 !important;
+          }
     .profile-image {
       img {
         height: 48px;
@@ -91,6 +106,10 @@
           margin-right: 20px;
           padding-right: 20px;
           border-right: 1px solid rgb(222, 225, 222);
+            @media (max-width:1400px) {
+          margin-right: 5px;
+          padding-right: 5px;
+          }
           h6 {
             color: rgb(15, 29, 14);
             font-weight: bold;

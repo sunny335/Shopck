@@ -11,7 +11,7 @@ const Sidebar = () => {
     <div className='sidebar text-center me-3'>
       <div className='profile-image'>
         <img
-          src='https://yams.secondhandapp.at/api/v1/shpock-production/images/default_avatar_m_1/?rule=aw100ah100q75jpeg'
+          src='https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg'
           alt=''
         />
       </div>

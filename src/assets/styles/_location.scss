@@ -8,6 +8,9 @@
   }
   > button {
     padding: 8px 16px;
+    white-space: pre;
+    display: flex;
+    align-items: center;
     border-color: transparent;
     border-radius: 2em;
     border-image: initial;

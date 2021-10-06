@@ -30,11 +30,19 @@
   }
   .filter-btn {
     margin-top: 20px;
+    @media (max-width:992px) {
+      display: none;
+    }
     ul {
       display: flex;
       align-items: center;
       margin: 0;
       padding: 0;
+      padding: 10px 0;
+         @media (max-width:992px) {
+         max-width: 1200px;
+      overflow-y: scroll;
+          }
       li {
         list-style: none;
         margin-right: 8px;
@@ -42,7 +50,10 @@
           margin: 0;
         }
 
-        > button {
+        >  button {
+          display: flex;
+          align-items: center;
+          white-space: pre;
           svg {
             height: 16px;
             width: 16px;
@@ -78,6 +89,10 @@
             background-color: rgb(226, 232, 235);
             color: rgb(15, 29, 14);
           }
+          // @media (max-width:992px) {
+          //      padding: 8px 16px;
+          //   font-size: 14px;
+          // }
         }
         .clear-btn {
           background: transparent;
@@ -99,6 +114,12 @@
     .clicked {
       transform: rotate(185deg);
     }
+  }
+  .mobile-responsive{
+    display: none;
+      @media (max-width:992px) {
+        display: block;
+          }
   }
   .product-not-found {
     margin-top: 30px;

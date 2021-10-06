@@ -34,9 +34,15 @@ footer {
       line-height: 22px;
       margin-bottom: 16px;
     }
+     @media  (max-width:767px) {
+      text-align: center;
+    }
   }
   .logo {
     text-align: right;
+      @media  (max-width:767px) {
+      text-align: center;
+    }
     button {
       cursor: pointer;
       color: rgb(15, 29, 14);
@@ -61,6 +67,15 @@ footer {
       font-size: 14px;
       line-height: 20px;
       margin-top: 16px;
+          @media  (max-width:767px) {
+      text-align: center;
+        display: block;
+    }
+    }
+  }
+  .lists{
+    @media  (max-width:767px) {
+      text-align: center;
     }
   }
 }

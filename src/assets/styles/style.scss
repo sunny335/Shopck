@@ -1,8 +1,7 @@
 @import './herobanner';
 @import './header';
-@import './recentsweeding';
-@import './weedingcouple';
-@import './weedingConvention';
+@import './popup.scss';
+@import './menubar.scss';
 @import './footer';
 @import './form';
 @import './slider';
@@ -47,4 +46,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   text-size-adjust: 100%;
+}
+body{
+  overflow-X: hidden;
+}
+#root{
+  // overflow-x: hidden;
+  overflow-X: hidden;
 }

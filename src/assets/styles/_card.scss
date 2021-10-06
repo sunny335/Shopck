@@ -83,6 +83,10 @@
       border-color: rgb(226, 232, 235);
       min-width: 275px;
       margin: 16px;
+       @media  (max-width:767px) {
+     min-width: 100px;
+     flex-direction: column;
+ }
       &:first-child {
         margin-left: 0;
       }
@@ -94,6 +98,10 @@
         flex-wrap: wrap;
         padding: 20px 16px;
         background-color: rgb(203, 243, 221);
+           @media  (max-width:767px) {
+     width: 100px;
+     flex-direction: column;
+ }
       }
       svg {
         height: 40px;
