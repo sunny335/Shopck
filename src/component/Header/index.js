@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Col, Row, Nav, NavItem, Button } from 'reactstrap';
+import { Container, Col, Row, Nav, NavItem, Button, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Authentication from '../AuthenticationForm';
 import { Link, NavLink } from 'react-router-dom';
 import ModalRight from '../ModalRight';
@@ -9,6 +9,7 @@ import Search from '../Search';
 const Header = () => {
   const [modal, setModal] = useState(false);
   const [login, setLogin] = useState(false);
+  const [toggles, setToggles] = useState(false);
   const modals1 = () => {
     setModal(!modal);
     setLogin(true);
@@ -85,7 +86,7 @@ const Header = () => {
               </Nav>
               <ul className='button-groups d-flex align-items-center m-0 p-0'>
 
-                <li className='signup'>
+                {/* <li className='signup'>
                   <Button onClick={() => modals1()}>Sign Up</Button>
                   <ModalRight modal={modal} setModal={setModal}>
                     <Authentication login={login} />
@@ -93,13 +94,48 @@ const Header = () => {
                 </li>
                 <li className='login'>
                   <Button onClick={() => modals2()}>Log In</Button>
-                  {/* <ModalRight modal={modal} setModal={setModal}>
-                    <Authentication login={false} />
-                  </ModalRight> */}
-                </li>
+                </li> */}
                 {/* <li>
                   <Button>...</Button>
                 </li> */}
+                <li className='profile-menu-dropdown'>
+                  <div className="d-flex justify-content-center">
+                    <Dropdown toggle={() => setToggles(!toggles)}>
+                      <DropdownToggle caret className='m-0 p-0 border-0 bg-white'>
+                        <figure>
+
+                          <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-male-avatar-profile-picture-vector.jpg" alt="" />
+                        </figure>
+                        <span>AHmed S.</span>
+                      </DropdownToggle>
+                      <DropdownMenu
+                        end
+                        className={`${toggles && 'd-block'}`}
+                      >
+
+                        <Link to="/Profile">
+                          message
+                        </Link>
+                        <Link to="/Profile/selling">
+                          Selling
+                        </Link>
+                        <Link to="/product-single">
+                          Buying
+                        </Link>
+
+                        <Link to="/Profile/watchlist">
+                          Watchlist
+                        </Link>
+                        <Link to="/users/reviews">
+                          reviews
+                        </Link>
+                        <Button to="#">
+                          Logout
+                        </Button>
+                      </DropdownMenu>
+                    </Dropdown>
+                  </div>
+                </li>
               </ul>
             </div>
           </Col>
