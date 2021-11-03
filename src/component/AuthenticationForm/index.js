@@ -4,11 +4,17 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 const Authentication = ({ login = false }) => {
   const [signup, setLogin] = useState(login);
   const [forgoPassword, setForgoPassword] = useState(false);
-
+  const [signups, setSignUp] = useState(false);
   const backtologin = () => {
     setLogin(false);
     setForgoPassword(false);
   };
+  const signupForm = () => {
+    setSignUp(true);
+    setLogin(true);
+    setForgoPassword(false);
+
+  }
   return (
     <div className='authentication'>
       {forgoPassword ? (
@@ -31,11 +37,49 @@ const Authentication = ({ login = false }) => {
           </Form>
           <div>
 
-          <h6 onClick={() => backtologin()}> Back to login</h6>
+            <h6 onClick={() => backtologin()}> Back to login</h6>
           </div>
         </div>
-      ) : signup ? (
-        <div className='signup'>
+      ) : signup ? (<>
+        {signups ? <div className='signupForm'>
+          <h3>Sign up</h3>
+          <hr />
+          <Form>
+            <FormGroup className='mb-2 mr-sm-2 mb-sm-0'>
+              <Input
+                type='name'
+                name='fname'
+                placeholder='First Name'
+              />
+            </FormGroup>
+            <FormGroup className='mb-2 mr-sm-2 mb-sm-0'>
+              <Input
+                type='name'
+                name='lastName'
+                placeholder="Last Name"
+              />
+              </FormGroup>
+              <span className='f-name'>We will only show the first letter of your last name</span>
+            <FormGroup className='mb-2 mr-sm-2 mb-sm-0 mt-3'>
+              <Input
+                type='email'
+                name='email'
+                id='exampleEmail'
+                placeholder='Email address'
+              />
+            </FormGroup>
+            <FormGroup className='mb-2 mr-sm-2 mb-sm-0'>
+              <Input
+                type='password'
+                name='password'
+                id='examplePassword'
+                placeholder="Create a password"
+              />
+            </FormGroup>
+
+            <Button >Sign Up</Button>
+          </Form>
+        </div> : <div className='signup'>
           <h5>
             Already a member?
             <span onClick={() => setLogin(false)}> Log In</span>
@@ -91,9 +135,11 @@ const Authentication = ({ login = false }) => {
               Continue with Facebook
             </Button>
             <span className='line'></span>
-            <Button className='btnemail'>Continue with Email</Button>
+            <Button className='btnemail' onClick={() => signupForm()}>Continue with Email</Button>
           </div>
-        </div>
+        </div>}
+
+      </>
       ) : (
         <div className='login'>
           <h3>Login</h3>

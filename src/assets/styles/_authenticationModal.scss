@@ -41,8 +41,7 @@
       overflow: visible;
       text-decoration: none;
       background: none transparent;
-      transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-color, box-shadow, color;
+      transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, border-color, box-shadow, color;
       border-width: initial;
       border-style: none;
       border-image: initial;
@@ -91,8 +90,7 @@
       margin: 0px;
       text-decoration: none;
       background: none rgb(255, 255, 255);
-      transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-color, box-shadow, color;
+      transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, border-color, box-shadow, color;
       padding: 9px 24px;
       border-radius: 2em;
       border-width: 1px;
@@ -242,5 +240,54 @@
         }
       }
     }
+  }
+}
+.signupForm {
+  min-width: 280px;
+  h3 {
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  .form-group {
+    margin-bottom: 16px !important;
+  }
+  .f-name {
+    margin-top: -16px;
+    margin-bottom: 32px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 0px;
+    color: rgb(93, 104, 93);
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+  }
+  button {
+    background: none rgb(15, 29, 14);
+    transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, border-color, box-shadow, color;
+    border-color: rgb(15, 29, 14);
+    padding: 9px 24px;
+    border-radius: 2em;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 28px;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    appearance: button;
   }
 }
