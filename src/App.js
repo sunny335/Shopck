@@ -19,7 +19,8 @@ import SearchPage from './views/SearchPage';
 import Profile from './views/Profile';
 import Shops from './views/Shops';
 import Users from './views/Users';
-import ProductSinge  from './views/ProductSingle';
+import ProductSinge from './views/ProductSingle';
+import DashboardRoutes from './views/Dashboard';
 const App = () => {
   return (
     <>
@@ -33,7 +34,11 @@ const App = () => {
           <Route path='/profile' component={Profile} />
           <Route path='/users' component={Users} />
           <Route exact path='/shops' component={Shops} />
-           <Route exact path='/product-single' component={ProductSinge} />
+          <Route
+            path="/dashboard"
+            component={DashboardRoutes}
+          />
+          <Route exact path='/product-single' component={ProductSinge} />
         </Switch>
         <Footer />
       </Router>
